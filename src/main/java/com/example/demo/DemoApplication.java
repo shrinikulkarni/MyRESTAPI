@@ -21,13 +21,17 @@ public class DemoApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(DemoApplication.class, args);
-<<<<<<< HEAD
+		System.out.println("***********************");
+		System.out.println("Student Service running");
+		System.out.println("***********************");
+	};
+	@GetMapping("/api/hello")
+	public String sayHello() {
+		return "Hello, Swagger!";
 	}
+}
 
-=======
-		System.out.println("running");
-	}
-
+	/*
 	@GetMapping
 	public String defaultMapping()
 	{
@@ -53,6 +57,4 @@ public class DemoApplication {
 				)
 		);
 	}
-	*/
->>>>>>> 41f8d8a2c4ec7fdb1df48c8e50e6fceaaa4f4717
-}
+*/
