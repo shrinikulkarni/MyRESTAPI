@@ -21,6 +21,38 @@ public class DemoApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(DemoApplication.class, args);
+<<<<<<< HEAD
 	}
 
+=======
+		System.out.println("running");
+	}
+
+	@GetMapping
+	public String defaultMapping()
+	{
+		return ("This is default home mapping");
+	}
+	/*
+
+	@GetMapping
+	public List <String> hello()
+	{
+		return List.of("Hello","World");
+	}
+	*/
+    /*
+	@GetMapping
+	public List <Student> hello()
+	{
+		return List.of (
+				new Student (1234L, "Shrini",
+						"shrink@gmail.com",
+						 46,
+						LocalDate.of(1972,Month.JULY,5)
+				)
+		);
+	}
+	*/
+>>>>>>> 41f8d8a2c4ec7fdb1df48c8e50e6fceaaa4f4717
 }
